@@ -1,5 +1,8 @@
 // Colors
-$main: #FF655E;
+$main: #FD582B;
+$darken-main: darken($main, 5%);
+$first-bg: #fff;
+$first-fg: invert($first-bg);
 $brand-primary: $main;
 $brand-info: $main;
 
@@ -9,8 +12,8 @@ $font-family-sans-serif: 'Open Sans', 'sans-serif';
 // Navbar
 $navbar-default-link-color: #35384C;
 $navbar-default-link-hover-color: #282B3A;
-$navbar-default-bg: #fff;
-$navbar-default-border: #fff;
+$navbar-default-bg: $first-bg;
+$navbar-default-border: $first-bg;
 $navbar-border-radius: 0px;
 $navbar-default-link-active-color: #282B3A;
 $navbar-height: 75px;

@@ -14,73 +14,78 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
+    .heading
+      .container
+        .navbar.navbar-default
+          .container
+              .navbar-header
+                a.navbar-brand.brand(href='/apps')
+                  img(src='img/logo.png')
+                button.navbar-toggle.collapsed(aria-controls='navbar', aria-expanded='false', data-target='#navbar', data-toggle='collapse', type='button')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              #navbar.navbar-collapse.collapse
+                ul.nav.navbar-nav.navbar-right
+                  li
+                    a(href='/pricing') Pricing
+                  li
+                    a(href='http://app.closeheat.com/users/sign_in') Log In
+                  li
+                    p.navbar-text or
+                  li
+                    p.navbar-btn
+                      a.btn.btn-primary(href='http://app.closeheat.com/users/sign_up') Sign Up
+
+      .container
+        .row
+          h1.text-center Supercharge Your Development Process
+          h2.text-center Launch the New Era of Static Web Apps
+          .hero-image
+
+          .clarity-note.text-center
+            p.lead Ecosystem for the <b>fastest development process ever</b>.
+            a.btn.btn-lg.btn-primary.cta(href='http://app.closeheat.com/users/sign_up') Sign up free
+
+  .benefits
     .container
-      .navbar.navbar-default
-        .container
-            .navbar-header
-              a.navbar-brand.brand(href='/apps')
-                img(src='img/logo.png')
-              button.navbar-toggle.collapsed(aria-controls='navbar', aria-expanded='false', data-target='#navbar', data-toggle='collapse', type='button')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            #navbar.navbar-collapse.collapse
-              ul.nav.navbar-nav.navbar-right
-                li
-                  a(href='#') Pricing
-                li
-                  a(href='#') Log In
-                li
-                  p.navbar-text or
-                li
-                  button.btn.btn-primary.navbar-btn(type='button') Sign Up
+      header
+        h2.text-center Get More By Doing Less
+        h3.text-center Leave Gulp, Grunt and package.json to Us
 
-      .row.heading
-        h1.text-center Supercharge Your Development Process
-        h2.text-center Launch the New Era of Static Web Apps
-        .hero-image
+      .row.productivity
+        .col-md-6.col-xs-6.illustration.text-right
+          img(src='img/robot.png')
+        .col-md-4.col-xs-6.description
+          h3 Productivity boost
+          p
+            | Forget ALL configuration.
+            |  NPM installs dependencies upon require while Jade,
+            |  CoffeeScript and SCSS work without setup.
 
-        .clarity-note.text-center
-          p.lead Ecosystem for the <b>fastest development process ever</b>.
-          button.btn.btn-lg.btn-primary.cta Sign up free
+      .row.frameworks
+        .col-md-offset-2.col-md-4.col-xs-6.description.text-right
+          h3 Freedom For Any Framework
+          p
+            | Use any Javascript framework without thinking about setup or
+            |  searching for a boilerplate.
+        .col-md-4.col-xs-6.illustration
+          img(src='img/frameworks.png')
 
-      .benefits
-        header
-          h2.text-center Get More By Doing Less
-          h3.text-center Leave Gulp, Grunt and package.json to Us
+      .row.deployment
+        .col-md-6.col-xs-6.illustration.text-right
+          img(src='img/spaceship.png')
+        .col-md-4.col-xs-6.description
+          h3 Easy-going Web App Launch
+          p
+            | Deployment is as easy as pushing your code to Github.
+            |  Pushing your code is as easy as a single command.
 
-        .row.productivity
-          .col-md-offset-2.col-md-4.illustration.text-right
-            img(src='img/robot.png')
-          .col-md-6.description
-            h3 Productivity boost
-            p
-              | Forget ALL configuration.
-              |  NPM installs dependencies upon require while Jade,
-              |  CoffeeScript and SCSS work without setup.
-
-        .row.frameworks
-          .col-md-offset-2.col-md-4.description.text-right
-            h3 Freedom For Any Framework
-            p
-              | Use any Javascript framework without thinking about setup or
-              |  searching for a boilerplate.
-          .col-md-6.illustration.text-left
-            img(src='img/frameworks.png')
-
-        .row.deployment
-          .col-md-offset-2.col-md-4.illustration.text-right
-            img(src='img/spaceship.png')
-          .col-md-6.description
-            h3 Easy-going Web App Launch
-            p
-              | Deployment is as easy as pushing your code to Github.
-              |  Pushing your code is as easy as a single command.
-
-      .row.text-center
-        h2 Launch Your App Months Before the Deadline
-        button.btn.btn-lg.btn-primary.cta Sign up free
+      .last-call
+        .row.text-center
+          h2 Launch Your App Months Before the Deadline
+          a.btn.btn-lg.btn-primary.cta(href='http://app.closeheat.com/users/sign_up') Sign up free
 
     footer.more-links
       .row

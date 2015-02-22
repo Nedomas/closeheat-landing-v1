@@ -5,8 +5,13 @@
   .brand img {
     height: 1.428em;
   }
-  .navbar-btn {
-    @include box-shadow(0px 2px 0px #FF342B);
+
+  .navbar-nav > li > a {
+    color: $first-fg;
+  }
+
+  .navbar-btn a {
+    @include box-shadow(0px 2px 0px $darken-main);
   }
 }
 
@@ -16,16 +21,19 @@ h2 {
 
 .cta {
   text-transform: uppercase;
-  @include box-shadow(0px 9px 0px #FF342B);
+  @include box-shadow(0px 9px 0px $darken-main);
   font-size: 1.8em;
   padding: .5em 1.5em;
 
   &:active {
-    @include box-shadow(0px 9px 0px #FF342B);
+    @include box-shadow(0px 9px 0px $darken-main);
   }
 }
 
 .heading {
+  color: $first-fg;
+  background-color: $first-bg;
+
   .hero-image {
     background-image: url('../img/frame.png');
     height: 400px;
@@ -43,6 +51,10 @@ h2 {
 
 .benefits {
   padding-top: 2em;
+
+  h2 {
+    padding-bottom: 0;
+  }
 
   header {
     padding-bottom: .5em;
@@ -67,11 +79,25 @@ h2 {
   .productivity .description {
     padding-top: 3em;
   }
+
+  .frameworks .description {
+    padding-top: 1.7em;
+  }
+
+  .deployment .description {
+    padding-top: 1.5em;
+  }
+}
+
+.last-call {
+  h2 {
+    padding-bottom: 1em;
+  }
 }
 
 footer {
-  margin-top: 5em;
-  padding: 5em;
+  margin-top: 4em;
+  padding: 2em;
   background-color: #35384C;
   color: #fff;
 
