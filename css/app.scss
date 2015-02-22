@@ -1,25 +1,85 @@
-// [class*="col-"] {
-//   padding-top: 15px;
-//   padding-bottom: 15px;
-//   background-color: #eee;
-//   background-color: rgba(86,61,124,.15);
-//   border: 1px solid #ddd;
-//   border: 1px solid rgba(86,61,124,.2);
-// }
+@import "bootstrap-variables";
+@import "../vendor/css/_bootstrap";
 
-.top {
-  text-align: center;
-}
-.nav {
-  text-align: right;
-}
-.hero-image { 
-  background-image: url("../img/frame.png");
-  height: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.navbar {
+  .brand img {
+    height: 1.428em;
+  }
+  .navbar-btn {
+    @include box-shadow(0px 2px 0px #FF342B);
+  }
 }
 
+h2 {
+  padding-bottom: 1em;
+}
+
+.cta {
+  text-transform: uppercase;
+  @include box-shadow(0px 9px 0px #FF342B);
+  font-size: 1.8em;
+  padding: .5em 1.5em;
+
+  &:active {
+    @include box-shadow(0px 9px 0px #FF342B);
+  }
+}
+
+.heading {
+  .hero-image {
+    background-image: url('../img/frame.png');
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .clarity-note {
+    padding: 2em 2em 3em;
+  }
+}
+
+.benefits {
+  padding-top: 2em;
+
+  header {
+    padding-bottom: .5em;
+  }
+
+  .row {
+    padding: 3.5em;
+  }
+
+  .illustration {
+    img {
+      height: 200px;
+    }
+  }
+
+  .description {
+    p {
+      font-size: 1.15em;
+    }
+  }
+
+  .productivity .description {
+    padding-top: 3em;
+  }
+}
+
+footer {
+  margin-top: 5em;
+  padding: 5em;
+  background-color: #35384C;
+  color: #fff;
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: #fff;
+    }
+  }
+}

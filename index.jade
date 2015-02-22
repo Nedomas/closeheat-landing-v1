@@ -5,7 +5,6 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Bootstrap Grid Template
-    link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/app.css', rel='stylesheet')
 
     script(src='js/jquery.min.js')
@@ -17,74 +16,84 @@ html(lang='en')
   body
     .container
       .navbar.navbar-default
-      .container
-        .navbar-header
-          a.navbar-brand.brand(href='aa')
-            img 
-          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-
-        #navbar.navbar-collapse.collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#') Docs
-            li
-              a(href='#') Support
-            li.dropdown
-              a.dropdown-toggle(data-toggle="dropdown" href="#")
-                | BEnas
-                span.caret
-                a gravatar
-
-              ul.dropdown-menu(role="menu")
-                a Edit profile
+        .container
+            .navbar-header
+              a.navbar-brand.brand(href='/apps')
+                img(src='img/logo.png')
+              button.navbar-toggle.collapsed(aria-controls='navbar', aria-expanded='false', data-target='#navbar', data-toggle='collapse', type='button')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            #navbar.navbar-collapse.collapse
+              ul.nav.navbar-nav.navbar-right
                 li
-                  a Logout
+                  a(href='#') Pricing
+                li
+                  a(href='#') Log In
+                li
+                  p.navbar-text or
+                li
+                  button.btn.btn-primary.navbar-btn(type='button') Sign Up
 
-      .row
-        .top
+      .row.heading
+        h1.text-center Supercharge Your Development Process
+        h2.text-center Launch the New Era of Static Web Apps
+        .hero-image
 
-      h1 Supercharge Your Development Process
-      h2 Launch the New Era of Static Web Apps
-        .hero-image.col-md-12
-
-      p.clarity-note Ecosystem for the fastest development process ever.
-      button.btn.btn-lg.btn-primary Sign up free
+        .clarity-note.text-center
+          p.lead Ecosystem for the <b>fastest development process ever</b>.
+          button.btn.btn-lg.btn-primary.cta Sign up free
 
       .benefits
-        h2 Get More By Doing Less
-        h3 Leave Gulp, Grunt and package.json to Us
+        header
+          h2.text-center Get More By Doing Less
+          h3.text-center Leave Gulp, Grunt and package.json to Us
 
         .row.productivity
-          .col-md-6.images-of-jade-scss-robots
-          .col-md-6
-            h4 Productivity boost
+          .col-md-offset-2.col-md-4.illustration.text-right
+            img(src='img/robot.png')
+          .col-md-6.description
+            h3 Productivity boost
             p
               | Forget ALL configuration.
               |  NPM installs dependencies upon require while Jade,
               |  CoffeeScript and SCSS work without setup.
 
-        .row.deployment
-          .col-md-6
-            h4 Easy-going Web App Launch
-            p
-              | Deployment is as easy as pushing your code to Github.
-              |  Pushing your code is as easy as a single command.
-          .col-md-6.images-of-rockets-and-github
-
         .row.frameworks
-          .col-md-6.images-of-angular-react-ember
-          .col-md-6
-            h4 Freedom For Any Framework
+          .col-md-offset-2.col-md-4.description.text-right
+            h3 Freedom For Any Framework
             p
               | Use any Javascript framework without thinking about setup or
               |  searching for a boilerplate.
+          .col-md-6.illustration.text-left
+            img(src='img/frameworks.png')
 
-      h2 Launch Your App Months Before the Deadline
-      button.btn.btn-lg.btn-primary Sign up free
+        .row.deployment
+          .col-md-offset-2.col-md-4.illustration.text-right
+            img(src='img/spaceship.png')
+          .col-md-6.description
+            h3 Easy-going Web App Launch
+            p
+              | Deployment is as easy as pushing your code to Github.
+              |  Pushing your code is as easy as a single command.
 
-      footer.more-links
-        p There will be more links: Support, Blog, Twitter, Location and so on.
+      .row.text-center
+        h2 Launch Your App Months Before the Deadline
+        button.btn.btn-lg.btn-primary.cta Sign up free
+
+    footer.more-links
+      .row
+        .col-md-offset-1.col-md-3
+          ul
+            li
+              a(href='#') Support
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Twitter
+            li
+              a(href='#') Contact Us
+        .col-md-3
+          h4 We're located in
+          p Šaltinių g. 1-28, Vilnius, Lithuania
