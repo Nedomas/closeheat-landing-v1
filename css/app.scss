@@ -109,3 +109,22 @@ footer {
     }
   }
 }
+
+.pricing {
+  .plan {
+    background-color: #35384C;
+    padding: 1em;
+    color: #fff;
+
+    .price {
+      span {
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}

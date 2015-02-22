@@ -1,0 +1,42 @@
+extends ../layout
+
+block heading
+  .pricing
+    h1.text-center Simple Plans
+
+    .row
+      .col-sm-4.text-center
+        .plan
+          h4 Free
+          p.price
+            sup $
+            span 0
+            sub /mo.
+          p 1 app
+          p Open Source Repositories
+          p
+            a.btn.btn-primary(href='#') Get started - $0
+
+      .col-sm-4.text-center
+        .plan
+          h4 Starter
+          p.price
+            sup $
+            span 19
+            sub /mo.
+          p 5 apps
+          p Private Repositories
+          p
+            a.btn.btn-primary(href='#') Get started - $0
+
+      .col-sm-4.text-center
+        .plan
+          h4 Team
+          p.price
+            sup $
+            span 49
+            sub /mo.
+          p Unlimited apps
+          p Private Repositories
+          p
+            a.btn.btn-primary(href='#') Get started - $0
