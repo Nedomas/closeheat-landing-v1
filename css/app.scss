@@ -1,8 +1,25 @@
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
+// [class*="col-"] {
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   background-color: #eee;
+//   background-color: rgba(86,61,124,.15);
+//   border: 1px solid #ddd;
+//   border: 1px solid rgba(86,61,124,.2);
+// }
+
+.top {
+  text-align: center;
 }
+.nav {
+  text-align: right;
+}
+.hero-image { 
+  background-image: url("../img/frame.png");
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+

@@ -16,16 +16,40 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
     .container
-      header.nav
-        ul
-          li [ ] closeheat
-          li Features
-          li Pricing
-          li Log in or Sign up
+      .navbar.navbar-default
+      .container
+        .navbar-header
+          a.navbar-brand.brand(href='aa')
+            img 
+          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Docs
+            li
+              a(href='#') Support
+            li.dropdown
+              a.dropdown-toggle(data-toggle="dropdown" href="#")
+                | BEnas
+                span.caret
+                a gravatar
+
+              ul.dropdown-menu(role="menu")
+                a Edit profile
+                li
+                  a Logout
+
+      .row
+        .top
 
       h1 Supercharge Your Development Process
       h2 Launch the New Era of Static Web Apps
-      .hero-image
+        .hero-image.col-md-12
 
       p.clarity-note Ecosystem for the fastest development process ever.
       button.btn.btn-lg.btn-primary Sign up free
