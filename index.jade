@@ -2,13 +2,25 @@ extends ./layout
 
 block heading
   .row
-    h1.text-center Supercharge Your Development Process
-    h2.text-center Launch the New Era of Static Web Apps
-    .hero-image
+    h1.text-center Supercharge Your Web App Development Workflow
+    h2.text-center Build and Launch Without Doing Monkey Tasks
 
-    .clarity-note.text-center
-      p.lead Ecosystem for the <b>fastest development process ever</b>.
-      a.btn.btn-lg.btn-primary.cta(href='http://app.closeheat.com/users/sign_up') Sign up free
+    .hero.row
+      .col-sm-6
+        img#hero-image.img-responsive.img-rounded(src='/img/code.png')
+        .view-change.text-center
+          .btn-group.btn-group-lg(role='group')
+            button#code.btn.btn-info Code & Build
+            button#deploy.btn.btn-outline.btn-info Deploy & Host
+
+      .col-sm-5
+        .clarity-note
+          p.lead
+            | An ecosystem which enhances your workflow by <b>automating
+            |  your builds</b> and providing
+            |  <b>continuous single-click deployments</b>.
+          .row.text-center
+            a.btn.btn-lg.btn-primary.cta(href='http://app.closeheat.com/users/sign_up') Sign up free
 
 block content
   .benefits
