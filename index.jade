@@ -3,22 +3,26 @@ extends ./layout
 block heading
   .row
     h1.text-center Supercharge Your Web App Development Workflow
-    h2.text-center Build and Launch Fast Web Apps Fast
+      p
+        small.text-center The Only Way to Truly Forget All Configuration of Static Web Apps
 
     .hero.row
-      .col-sm-6
+      .col-sm-7.text-center
         img#hero-image.img-responsive.img-rounded(src='/img/code.png')
-        .view-change.text-center
+        .view-change
           .btn-group.btn-group-lg(role='group')
             button#code.btn.btn-info Code & Build
             button#deploy.btn.btn-outline.btn-info Deploy & Host
+
 
       .col-sm-5
         .clarity-note
           p.lead
             | An ecosystem which enhances your workflow by <b>automating
-            |  your monkey tasks</b> and providing
-            |  <b>continuous one-liner deployments</b>.
+            |  the monkey tasks</b> and providing
+            |  <b>continuous one-liner deployments</b> for
+            <br>
+            |  Static Web Apps.
           .row.text-center
             a.btn.btn-lg.btn-primary.cta(href='http://app.closeheat.com/users/sign_up') Sign up free
 
@@ -26,7 +30,7 @@ block content
   .benefits
     .container
       header
-        h2.text-center Get More By Doing Less
+        h2.text-center Develop With Ease
         h3.text-center Leave Gulp, Grunt and package.json to Us
 
       .row.productivity

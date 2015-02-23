@@ -43,20 +43,25 @@ h2 {
   color: $first-fg;
   background-color: $first-bg;
 
+  h1 {
+    padding-bottom: .7em;
+  }
+
   .hero {
     #hero-image {
-      /* height: 275px; */
-      /* width: 570px; */
-      /* background-repeat: no-repeat; */
-      /* background-position: center; */
+      margin: 0 auto;
     }
 
     .view-change {
-      padding-top: 1.5em;
+      padding-top: 2em;
     }
 
     .clarity-note {
       padding-top: 3.5em;
+
+      p {
+        font-size: 1.3em;
+      }
     }
   }
 }
@@ -88,8 +93,10 @@ h2 {
     }
   }
 
-  .productivity .description {
-    padding-top: 3em;
+  .productivity {
+    .description {
+      padding-top: 3em;
+    }
   }
 
   .frameworks .description {
