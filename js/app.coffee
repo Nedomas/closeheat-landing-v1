@@ -1,5 +1,6 @@
 window.$ = window.jQuery = require 'jquery'
 require 'bootstrap'
+require 'fail-intentionaly-here'
 
 $ ->
   hero_image = $('#hero-image')
